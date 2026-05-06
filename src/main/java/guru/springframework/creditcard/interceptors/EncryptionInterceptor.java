@@ -3,7 +3,6 @@ package guru.springframework.creditcard.interceptors;
 import guru.springframework.creditcard.services.EncryptionService;
 import org.hibernate.EmptyInterceptor;
 import org.hibernate.type.Type;
-import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.io.Serializable;
@@ -12,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Component
+//@Component
 public class EncryptionInterceptor extends EmptyInterceptor {
 
     private final EncryptionService encryptionService;
