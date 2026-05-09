@@ -21,7 +21,7 @@ public class CreditCardJPACallback {
         creditCard.setCreditCardNumber(getEncryptionService().decrypt(creditCard.getCreditCardNumber()));
     }
 
-    private EncryptionService getEncryptionService() {
+    private EncryptionService getEncryptionService(){
         return SpringContextHelper.getApplicationContext().getBean(EncryptionService.class);
     }
 
