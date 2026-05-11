@@ -7,11 +7,11 @@ import org.springframework.util.ReflectionUtils;
 
 import java.lang.reflect.Field;
 
-public abstract class AbstractEncyptionListener {
+public abstract class AbstractEncryptionListener {
 
     private final EncryptionService  encryptionService;
 
-    public AbstractEncyptionListener(EncryptionService encryptionService) {
+    public AbstractEncryptionListener(EncryptionService encryptionService) {
         this.encryptionService = encryptionService;
     }
 
