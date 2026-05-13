@@ -6,7 +6,7 @@ import org.hibernate.event.spi.PostLoadEventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PostLoadListener extends AbstractEncyptionListener implements PostLoadEventListener {
+public class PostLoadListener extends AbstractEncryptionListener implements PostLoadEventListener {
 
     public PostLoadListener(EncryptionService encryptionService) {
         super(encryptionService);

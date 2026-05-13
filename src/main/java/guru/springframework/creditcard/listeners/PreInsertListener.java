@@ -6,7 +6,7 @@ import org.hibernate.event.spi.PreInsertEventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PreInsertListener extends AbstractEncyptionListener implements PreInsertEventListener {
+public class PreInsertListener extends AbstractEncryptionListener implements PreInsertEventListener {
 
     public PreInsertListener(EncryptionService encryptionService) {
         super(encryptionService);
@@ -16,7 +16,7 @@ public class PreInsertListener extends AbstractEncyptionListener implements PreI
     public boolean onPreInsert(PreInsertEvent event) {
         System.out.println("In Pre Insert");
 
-        this.encrypt(event.getState(), event.getPersister().getPropertyNames(),  event.getEntity());
+        this.encrypt(event.getState(), event.getPersister().getPropertyNames(), event.getEntity());
 
         return false;
     }
