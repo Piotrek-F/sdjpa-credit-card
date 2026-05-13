@@ -16,7 +16,7 @@ public class PreUpdateListener extends AbstractEncryptionListener implements Pre
     public boolean onPreUpdate(PreUpdateEvent event) {
         System.out.println("In Pre Update");
 
-        this.encrypt(event.getState(), event.getPersister().getPropertyNames(),  event.getEntity());
+        this.encrypt(event.getState(), event.getPersister().getPropertyNames(), event.getEntity());
 
         return false;
     }

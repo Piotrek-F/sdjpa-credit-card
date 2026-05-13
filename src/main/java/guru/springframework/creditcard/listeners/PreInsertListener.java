@@ -16,7 +16,7 @@ public class PreInsertListener extends AbstractEncryptionListener implements Pre
     public boolean onPreInsert(PreInsertEvent event) {
         System.out.println("In Pre Insert");
 
-        this.encrypt(event.getState(), event.getPersister().getPropertyNames(),  event.getEntity());
+        this.encrypt(event.getState(), event.getPersister().getPropertyNames(), event.getEntity());
 
         return false;
     }
